@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+
+    <style>
+        /* Estilo general de la página */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+
+            /* Fondo con colores en diagonal */
+            background: linear-gradient(
+                135deg,
+                #001f3f 0%,
+                #0074D9 40%,
+                #7FDBFF 70%,
+                #B10DC9 100%
+            );
+
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #FFD700;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #111;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 35px 20px;
+        }
+
+        .tarjeta {
+            background-color: rgba(0, 0, 0, 0.35);
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Botón */
+        button {
+            background-color: #FFD700;
+            color: #111;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡BIENVENIDOS A MI PÁGINA!</h1>
+        <p>Aprendiendo a crear páginas web con HTML y CSS.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#contenido">Contenido</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main id="inicio">
+
+        <section class="tarjeta" id="contenido">
+            <h2>Mi primera página web</h2>
+
+            <p>
+                HTML permite organizar el contenido de una página web
+                mediante etiquetas.
+            </p>
+
+            <p>
+                CSS permite agregar colores, fondos, tamaños y diseños.
+            </p>
+
+            <button onclick="alert('¡Bienvenido a mi página web!')">
+                Haz clic aquí
+            </button>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Etiquetas HTML utilizadas</h2>
+
+            <ul style="display: inline-block; text-align: left;">
+                <li>&lt;html&gt;: estructura principal.</li>
+                <li>&lt;head&gt;: información de la página.</li>
+                <li>&lt;title&gt;: título de la pestaña.</li>
+                <li>&lt;body&gt;: contenido visible.</li>
+                <li>&lt;h1&gt;: título principal.</li>
+                <li>&lt;p&gt;: párrafos.</li>
+                <li>&lt;a&gt;: enlaces.</li>
+                <li>&lt;button&gt;: botones.</li>
+                <li>&lt;section&gt;: secciones de contenido.</li>
+                <li>&lt;footer&gt;: pie de página.</li>
+            </ul>
+        </section>
+
+        <section class="tarjeta" id="contacto">
+            <h2>Contacto</h2>
+            <p>Gracias por visitar mi página web.</p>
+            <a href="mailto:contacto@ejemplo.com" style="color: yellow;">
+                Enviar un correo
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Mi primera página web | Diseñada con HTML y CSS</p>
+    </footer>
+
+</body>
+</html>
